@@ -72,9 +72,9 @@ function playerAttack(attackType) {
     enemyHPDisplay.textContent = enemyHP + " / 250";
     if (enemyHP < 62) {
       enemyHPDisplay.style.backgroundColor = "red";
-    } else if (playerHP < 125) {
+    } else if (enemyHP < 125) {
       enemyHPDisplay.style.backgroundColor = "orange";
-    } else if (playerHP < 187) {
+    } else if (enemyHP < 187) {
       enemyHPDisplay.style.backgroundColor = "yellow";
     }
 
