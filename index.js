@@ -17,6 +17,7 @@ function checkEnemyDead() {
     responseText.textContent = "Veneficus Malus died! You win!";
     enemyResponse.textContent = "";
     enemyImg.src = "enemy/dead.gif";
+    playerImg.src = "player/idle.gif";
   } else {
     enemyAttack();
   }
@@ -27,6 +28,7 @@ function checkPlayerDead() {
     responseText.textContent = "You died!";
     enemyResponse.textContent = "";
     playerImg.src = "player/dead.gif";
+    enemyImg.src = "enemy/idle.gif";
   }
 }
 
