@@ -4,24 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-  </head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap" rel="stylesheet">
+
   <body>
-    <div id="playerHPDisplay">Your HP: 250</div>
-    <div id="playershielddisplay">Your shield: 0</div>
-    <div id="enemyHPDisplay">Enemy HP: 250</div>
-    <div id="enemyshielddisplay">Enemy shield: 0</div>
-    <br />
+    <div class="content">
+    <div class="both-info">
+    <!-- PLAYER INFO START -->
+    <div class="player-info">
+      <div id="playerHPDisplay" class="stats">
+        250 / 250
+      </div>
+    <img id="player-img" class="player-img" src="player\idle.gif">
+  </div>
+  <!-- PLAYER INFO STOP -->
+
+  <!-- ENEMY INFO START -->
+    <div class="enemy-info">
+      <div id="enemyHPDisplay" class="stats">
+        250 / 250
+      </div>
+    <img id="enemy-img" class ="enemy-img" src="enemy\idle.gif">
+
+</div>
+  <!-- ENEMY INFO STOP -->
+</div>
+
+<div class="both-response">
+    <!-- PLAYER RESPONSE START -->
     <div id="response">
       You are a wizard fighting your archenemy, the evil wizard Veneficus Malus.
       What will you do?
     </div>
+    <!-- PLAYER RESPONSE STOP -->
+
+    <!-- ENEMY RESPONSE START -->
     <div id="enemyresponse"></div>
-    <button id="unarmed-btn" onclick="unarmedStrike()">Unarmed strike</button>
-    <button id="fireball-btn" onclick="castFireball()">Cast fireball</button>
+    <!-- ENEMY RESPONSE STOP -->
+  </div>
+
+    <!-- ATTACKS START -->
+  <div class="attacks">
+    <button id="unarmed-btn" onclick="unarmedStrike()">
+      Unarmed strike
+    </button>
+    <button id="fireball-btn" onclick="castFireball()">
+      Cast fireball
+    </button>
     <button id="thunderbolt-btn" onclick="castThunderbolt()">
       Cast thunderbolt
     </button>
-    <button id="shield-btn" onclick="castShield()">Cast shield</button>
+    <button id="shield-btn" onclick="castShield()">
+      Cast shield
+    </button>
+  </div>
+<!-- ATTACKS STOP -->
+</div>
 
     <script src="index.js"></script>
   </body>

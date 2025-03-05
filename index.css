@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+10&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap");
+
+body {
+  font-family: helvetica;
+  font-family: "Jersey 10";
+  background-image: url(bg_1.png);
+}
+
+.content {
+  background-color: #fff;
+  padding: 3.125rem;
+  max-width: 31.25rem;
+  margin: auto;
+  border-radius: 1.5625rem;
+}
+
+/* INFO START */
+.both-info {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  margin-bottom: 0.3125rem;
+  max-width: 31.25rem;
+  margin: auto;
+}
+
+.stats {
+  background-color: #fff;
+  padding: 0.625rem;
+  border: 0.125rem solid #000;
+  border-radius: 0.625rem;
+  font-size: 0.875rem;
+  margin-bottom: 0.625rem;
+  background-color: rgb(135, 236, 135);
+}
+
+/* INFO STOP */
+
+/* RESPONSE START */
+.both-response {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0.625rem 0px;
+  max-width: 31.25rem;
+  margin: 0.625rem auto;
+}
+
+.player-info,
+.enemy-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* RESPONSE STOP */
+
+/* ATTACK BUTTONS START */
+.attacks {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+button {
+  font-family: "Jersey 10";
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.25rem;
+  background-color: #fff;
+  border: none;
+  font-weight: 700;
+  text-shadow: 1px 2px 3px #ccc;
+}
+
+button:hover {
+  color: red;
+  animation: blink 0.5s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+/* ATTACK BUTTONS STOP */
