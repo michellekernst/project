@@ -75,7 +75,7 @@ button {
 }
 
 button:hover {
-  color: red;
+  color: rgb(46, 31, 123);
   animation: blink 0.5s infinite;
 }
 
@@ -93,3 +93,11 @@ button:hover {
   }
 }
 /* ATTACK BUTTONS STOP */
+
+.credit {
+  text-align: center;
+  margin-top: 1.5625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  font-size: 0.625rem;
+}
