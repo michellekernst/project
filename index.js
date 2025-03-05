@@ -36,6 +36,8 @@ function checkPlayerDead() {
 function playerAttack(attackType) {
   if (playerHP === 0) {
     responseText.textContent = "You are dead."; // cannot attack if dead
+  } else if (enemyHP === 0) {
+    responseText.textContent = "Your enemy is dead.";
   } else {
     let minDamage, maxDamage, attackName;
     switch (attackType) {
@@ -100,6 +102,8 @@ function castShield() {
   if (playerHP === 0) {
     responseText.textContent = "You are dead."; // cannot shield if dead
     shield = 0;
+  } else if (enemyHP === 0) {
+    responseText.textContent = "Your enemy is dead.";
   } else {
     playerImg.src = "player/idle.gif";
     let minShield = 5;
